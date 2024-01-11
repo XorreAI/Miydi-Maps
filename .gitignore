@@ -1,1 +1,6 @@
 .sh
+
+
+# Exclude the _bin directory
+_bin/
+_styles/

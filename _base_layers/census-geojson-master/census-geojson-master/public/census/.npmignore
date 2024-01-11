@@ -1,9 +1,0 @@
-test/
-data/
-node_modules/
-cljs-runtime/
-package-lock.json
-*.md
-census.js.map
-.quokka
-manifest.edn

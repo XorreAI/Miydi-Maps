@@ -1,0 +1,15 @@
+node_modules
+package-lock.json
+shadow-idea-notes.md
+.idea
+.env
+.gitattributes
+.nrepl-port
+.shadow-cljs
+.clj-kondo
+.calva
+.lsp
+.vscode
+pom.xml
+*cljs-runtime
+public/census/data/
