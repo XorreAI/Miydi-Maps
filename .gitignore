@@ -4,3 +4,8 @@
 # Exclude the _bin directory
 _bin/
 _styles/
+
+
+
+_base_layers\Zip Code base with Metro Area.geojson
+_base_layers\Tracts - full native census data.geojson
