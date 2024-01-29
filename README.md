@@ -1,13 +1,12 @@
 # Welcome to Miydi Maps
 
-<table>
-  <tr>
-    <td><img src="/Miydi_Map_logo.png" alt="Miydi Maps Logo" width="500"/></td>
-    <td>Miydi Maps is an extensive repository dedicated to providing highly detailed socio-economic data, meticulously compiled down to individual census tracts and zip codes. This initiative is designed to streamline the utilization of geographic data across various advanced applications, including Artificial Intelligence, data analytics, urban planning, and more, by eliminating the complexities of data parsing.<br><br>Our mission with Miydi Maps is to empower researchers, developers, and analysts by providing them with ready-to-use, granular level data that can significantly enhance the accuracy and relevance of their projects and analyses.</td>
-  </tr>
-</table>
+Miydi Maps is an extensive repository dedicated to providing highly detailed socio-economic data, meticulously compiled down to individual census tracts and zip codes. This initiative is designed to streamline the utilization of geographic data across various advanced applications, including Artificial Intelligence, data analytics, urban planning, and more, by eliminating the complexities of data parsing.
 
-                                                                                                                  |
+<p align="center">
+  <img src="/Miydi_Map_logo.png" alt="Miydi Maps Logo" width="400"/>
+</p>
+
+Our mission with Miydi Maps is to empower researchers, developers, and analysts by providing them with ready-to-use, granular level data that can significantly enhance the accuracy and relevance of their projects and analyses.
 
 ## 🌍 Data Granularity and Accessibility
 
