@@ -24,8 +24,8 @@ Our methodology revolves around the segmentation of data into seven distinct tie
 
 - **Tier 1 & 7 (Outliers):** We start our analysis at the extremes, examining the top and bottom 10% of the dataset. These outliers often reveal unique, high-impact opportunities that deviate significantly from the norm.
 - **Tier 2 & 6 (Next Level):** Following the outliers, we delve into the next 15% on either side of the data spectrum. This segment helps us understand slightly less extreme but still significant deviations from the average.
-- **Tier 3 & 5 (Common Ground):** We then analyze the next 20% on both sides, moving closer to the most common data points. This segment represents more typical values but is still critical for identifying broader trends and patterns.
-- **Tier 4 (Core Data):** At the heart of our analysis lies the middle 30%, the largest bracket, encapsulating the core of the bell curve. This central segment is where the most common values—and often the most significant insights—reside.
+- **Tier 3 & 5 (Common Ground):** We then analyze the next 15% on both sides, moving closer to the most common data points. This segment represents more typical values but is still critical for identifying broader trends and patterns.
+- **Tier 4 (Core Data):** At the heart of our analysis lies the middle 20%, the largest bracket, encapsulating the core of the bell curve. This central segment is where the most common values—and often the most significant insights—reside.
 
 By structuring our analysis in this manner, we ensure a comprehensive understanding of the entire data spectrum, from the most unusual outliers to the prevalent norms. This tiered, weighted approach enables us to pinpoint precise areas of interest, highlight potential opportunities, and ultimately guide users toward data-driven decisions that can have a tangible impact on their projects or research.
 
