@@ -42,7 +42,7 @@ We pride ourselves on the integrity and reliability of our data. All datasets in
 - **Environmental Protection Agency**: Contributing environmental data, including pollution statistics and land use data by region.
 - **Reputable Data Companies**: Partnering with leading data providers to include comprehensive datasets on consumer behavior, health statistics, and economic activities at the zip code level.
 
-It's important to note that our repository contains the most recently released data from each source as of November 2023. However, given the varying publication frequencies (monthly, yearly, etc.) of our data sources, slight discrepancies in the timing of data releases may occur. Rest assured, Miydi Maps is continually updated to reflect the most current data available.
+It's important to note that our repository contains the most recently released data from each source as of November 2023. However, given the varying publication frequencies (monthly, yearly, etc.) of our data sources, slight discrepancies in the timing of data releases may occur. 
 
 ## 📜 Licensing
 
