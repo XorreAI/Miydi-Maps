@@ -1,10 +1,10 @@
 .sh
-
+.qmd
 
 # Exclude the _bin directory
 _bin/
-_styles/
-
+_base_layers/
+OSM data layers/
 
 
 _base_layers/Zip Code base with Metro Area.geojson
