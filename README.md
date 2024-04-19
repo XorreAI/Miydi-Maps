@@ -34,6 +34,30 @@ The datasets currently available were pulled in April 2024. Please be aware that
 
 This edition of Miydi Maps is a testament to our commitment to providing extensive, versatile data solutions to meet the diverse needs of our users. Whether you're working on urban planning, navigation applications, or any project requiring detailed geographic data, Miydi Maps - Open Street Data edition offers the foundational data to propel your initiatives forward.
 
+# Using the Miydi Maps Connection Layer
+
+Introducing the Miydi Maps Connection Layer, a versatile and powerful tool within the Miydi Maps - Open Street Data edition designed to seamlessly integrate various datasets with geospatial mapping. This layer serves as a comprehensive bridge, containing an array of state and government identifiers that are prevalent in a vast majority of public reports and datasets.
+
+## 🌐 Key Features of the Connection Layer
+
+The Connection Layer is your gateway to unlocking the full potential of geospatial data analysis. It is meticulously curated to include connectors for:
+
+- **Census-Level Data:** Enabling detailed demographic and socio-economic analysis at the granular census tract level.
+- **Administrative Divisions:** Incorporating identifiers for city, state, county, and divisional data, ensuring compatibility with a wide range of governmental datasets.
+- **Ecological Zones:** Featuring connectors for ecological regions, including Levels 1, 2, and 3, facilitating environmental and ecological research.
+
+## 🚀 How to Use the Connection Layer
+
+Utilizing the Connection Layer is straightforward and efficient—simply join your dataset with the Connection Layer to map your data geospatially. This integration allows for the enrichment of your datasets with precise geographic identifiers, making it possible to overlay your data onto maps with high accuracy and relevance.
+
+### Step-by-Step Integration:
+
+1. **Prepare Your Dataset:** Ensure your dataset is structured and ready for integration, with clear identifiers and data points that you wish to analyze geospatially.
+2. **Join with the Connection Layer:** Use common database tools or data analysis software to join your dataset with the Connection Layer, matching your data points with the appropriate geographic identifiers contained within the layer.
+3. **Visualize and Analyze:** With your data now geospatially connected, you can visualize, analyze, and derive insights with enhanced geographic context and precision.
+
+The Miydi Maps Connection Layer is an essential tool for researchers, analysts, urban planners, and anyone looking to leverage the power of geospatial data. By providing a straightforward method to connect disparate datasets to geographic locations, this layer opens up new avenues for data-driven decision-making and spatial analysis.
+
 
 ### 📈 Calculating Our Values: Identifying Actionable Opportunities
 
