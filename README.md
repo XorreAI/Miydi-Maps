@@ -12,6 +12,29 @@ Our mission with Miydi Maps is to empower researchers, developers, and analysts 
 
 Each dataset within Miydi Maps is structured to align with zip codes or census tracts, presenting a unique opportunity to access socio-economic data with unprecedented precision. This level of detail opens new avenues for localized research and development, offering insights that were previously challenging to obtain.
 
+# Miydi Maps - Open Street Data Edition
+
+Welcome to the Open Street Data edition of Miydi Maps, a dedicated repository housing GeoJson formatted data derived from Open Street Maps (OSM) specifically for the United States, with plans to extend coverage to other countries shortly. This specialized edition is hosted on a standalone GitHub repository to accommodate the substantial file sizes and navigate GitHub's file size limitations.
+
+## 🌐 About the Data
+
+Each file within this collection represents a single layer and "type" of OSM data, allowing for a modular approach where users can select exactly what they need for their projects. Due to GitHub's size constraints, data may be segmented into smaller, zipped files to ensure accessibility without compromising detail.
+
+### Data Compilation and Cleaning
+
+The data was meticulously compiled using the OSM API, pulling data for individual US regions to circumvent API limitations. This regional data was then amalgamated into comprehensive GeoJSON files. A thorough cleaning process was undertaken to eliminate duplicates, ensuring the integrity and usability of the datasets.
+
+### Handling Extraneous Data Points
+
+It's important to note that the original OSM API data contains a large number of extraneous data points, many of which have NULL values. These have been preserved in the datasets as they may hold value for specific projects, despite their apparent redundancy. Their presence does not significantly affect the overall size of the datasets due to their null value nature.
+
+## 📅 Data Timeliness
+
+The datasets currently available were pulled in April 2024. Please be aware that this data will not receive updates. However, we are considering the incorporation of additional data sets in future releases to ensure the continued relevance and expansion of the Miydi Maps - Open Street Data edition.
+
+This edition of Miydi Maps is a testament to our commitment to providing extensive, versatile data solutions to meet the diverse needs of our users. Whether you're working on urban planning, navigation applications, or any project requiring detailed geographic data, Miydi Maps - Open Street Data edition offers the foundational data to propel your initiatives forward.
+
+
 ### 📈 Calculating Our Values: Identifying Actionable Opportunities
 
 At Miydi Maps, our approach to data analysis is designed to unearth actionable opportunities that can drive informed decision-making and strategic planning. We employ a sophisticated weighted system, inspired by the principles of a bell curve distribution, to analyze and interpret our socio-economic datasets.
