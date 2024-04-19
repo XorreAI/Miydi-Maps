@@ -34,11 +34,11 @@ The datasets currently available were pulled in April 2024. Please be aware that
 
 This edition of Miydi Maps is a testament to our commitment to providing extensive, versatile data solutions to meet the diverse needs of our users. Whether you're working on urban planning, navigation applications, or any project requiring detailed geographic data, Miydi Maps - Open Street Data edition offers the foundational data to propel your initiatives forward.
 
-# Using the Miydi Maps Connection Layer
+# Using the Miydi Maps Connection Layers
 
 Introducing the Miydi Maps Connection Layer, a versatile and powerful tool within the Miydi Maps - Open Street Data edition designed to seamlessly integrate various datasets with geospatial mapping. This layer serves as a comprehensive bridge, containing an array of state and government identifiers that are prevalent in a vast majority of public reports and datasets.
 
-## 🌐 Key Features of the Connection Layer
+## 🌐 Key Features of the Connection Layers
 
 The Connection Layer is your gateway to unlocking the full potential of geospatial data analysis. It is meticulously curated to include connectors for:
 
@@ -46,7 +46,7 @@ The Connection Layer is your gateway to unlocking the full potential of geospati
 - **Administrative Divisions:** Incorporating identifiers for city, state, county, and divisional data, ensuring compatibility with a wide range of governmental datasets.
 - **Ecological Zones:** Featuring connectors for ecological regions, including Levels 1, 2, and 3, facilitating environmental and ecological research.
 
-## 🚀 How to Use the Connection Layer
+## 🚀 How to Use the Connection Layers
 
 Utilizing the Connection Layer is straightforward and efficient—simply join your dataset with the Connection Layer to map your data geospatially. This integration allows for the enrichment of your datasets with precise geographic identifiers, making it possible to overlay your data onto maps with high accuracy and relevance.
 
@@ -77,6 +77,46 @@ Our methodology revolves around the segmentation of data into seven distinct tie
 By structuring our analysis in this manner, we ensure a comprehensive understanding of the entire data spectrum, from the most unusual outliers to the prevalent norms. This tiered, weighted approach enables us to pinpoint precise areas of interest, highlight potential opportunities, and ultimately guide users toward data-driven decisions that can have a tangible impact on their projects or research.
 
 Our commitment to this analytical methodology underscores our dedication to providing not just data, but insights that can catalyze action and foster innovation across a multitude of domains.
+
+# Social Deprivation Index (SDI) Explained
+
+The SDI was used to calculate many of the data points for the census tract level data. This section explains how to read that data. 
+
+## SDI Components:
+
+- `SDI_SDI_score`: This score aggregates the various factors of social deprivation into a single metric. A lower score suggests less social deprivation, while a higher score indicates greater deprivation.
+
+- `SDI_PovertyLT100_FPL_score`: Reflects the proportion of the population living below the Federal Poverty Level (FPL). The score represents the extent of income-based poverty in the area.
+
+- `SDI_Single_Parent_Fam_score`: Measures the prevalence of single-parent families. A higher score can indicate more single-parent families, which may face additional social and economic challenges.
+
+- `SDI_Education_LT12years_score`: Assesses the education levels, specifically the percentage of individuals with less than 12 years of education, implying limited schooling.
+
+- `SDI_HHNo_Vehicle_score`: Indicates the percentage of households without access to a vehicle, which can signify transportation barriers.
+
+- `SDI_HHRenter_Occupied_score`: Represents the ratio of renter-occupied housing units, possibly suggesting transiency or a lack of home ownership.
+
+- `SDI_HHCrowding_score`: Looks at housing crowding, where a higher number of occupants live in a single unit than typically expected, indicating potentially overcrowded living conditions.
+
+- `SDI_Nonemployed_score`: Measures the rate of nonemployment among the capable workforce, indicating the level of joblessness.
+
+## SDI Percentages:
+
+- `SDI_pct_Poverty_LT100`: The actual percentage of the population living below the Federal Poverty Level in the area.
+
+- `SDI_pct_Single_Parent_Fam`: The percentage of families that are single-parent households.
+
+- `SDI_pct_Education_LT12years`: The percentage of the population with less than 12 years of education.
+
+- `SDI_pct_NonEmployed`: The percentage of the capable workforce that is not employed.
+
+- `SDI_pctHH_No_Vehicle`: The percentage of households in the area without access to a vehicle.
+
+- `SDI_pctHH_Renter_Occupied`: The percentage of housing units that are renter-occupied.
+
+- `SDI_pctHH_Crowding`: The percentage of households considered overcrowded.
+
+When interpreting the scores, they are usually standardized, often on a scale where the mean is zero, and the standard deviation is one. Thus, scores typically indicate how far and in what direction a region deviates from the mean or average level of deprivation. The actual percentages give a clearer picture of the proportion of the population affected by each factor, which can be very informative when assessing the needs of a specific area.
 
 
 ## 📊 Data Sources
