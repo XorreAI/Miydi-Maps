@@ -12,9 +12,9 @@ Our mission with Miydi Maps is to empower researchers, developers, and analysts 
 
 Each dataset within Miydi Maps is structured to align with zip codes or census tracts, presenting a unique opportunity to access socio-economic data with unprecedented precision. This level of detail opens new avenues for localized research and development, offering insights that were previously challenging to obtain.
 
-# Miydi Maps - Open Street Data Edition
+# Miydi Maps - Open Street Data 
 
-Welcome to the Open Street Data edition of Miydi Maps, a dedicated repository housing GeoJson formatted data derived from Open Street Maps (OSM) specifically for the United States, with plans to extend coverage to other countries shortly. This specialized edition is hosted on a standalone GitHub repository to accommodate the substantial file sizes and navigate GitHub's file size limitations.
+Welcome to the Open Street Data, a dedicated repository housing GeoJson formatted data derived from Open Street Maps (OSM) specifically for the United States, with plans to extend coverage to other countries shortly. 
 
 ## 🌐 About the Data
 
@@ -71,11 +71,32 @@ It's important to note that our repository contains the most recently released d
 
 Miydi Maps is released under the Creative Commons License. We believe in the free exchange of information and encourage you to utilize, modify, and distribute our datasets as you see fit, whether for personal projects, academic research, or commercial applications.
 
-## 🔄 Data Accuracy and Updates
+## 🚧 Data Limitations
 
-We are committed to maintaining the highest level of accuracy in our datasets. Each dataset is subjected to rigorous quality checks and is updated in alignment with the latest releases from our data sources. This ensures that Miydi Maps remains a reliable and up-to-date resource for your needs.
+While the datasets within Miydi Maps - Open Street Data edition represent the best available compilation from a vast array of official sources, it's crucial to understand that "best available" does not necessarily equate to "correct" or "accurate." The inherent limitations of our data are outlined below to ensure transparency and aid in the informed use of our resources.
 
-We welcome contributions, suggestions, and feedback from the community to further enrich Miydi Maps. Together, we can make this repository an invaluable asset for a wide range of applications and studies.
+### Inconsistencies and Timeframes
 
-Thank you for choosing Miydi Maps as your source for detailed socio-economic and geographic data. Let's explore the possibilities together!
+- **Varied Timeframes:** The datasets amalgamate information published at different intervals—ranging from monthly to every decade, with the last update in some cases as far back as 2019. This temporal disparity can lead to inconsistencies, especially in rapidly changing metrics.
+- **Diverse Data Sources:** The data is compiled from a wide range of sources, each with its own reporting standards and accuracies, leading to potential discrepancies within the same layers, such as population or estimated income figures.
+
+### COVID-19 and Recent Changes
+
+- **Pandemic Impact:** Some datasets may not fully reflect changes brought about by the COVID-19 pandemic, which has significantly altered aspects of public life. Wherever possible, we've used the most recent values to minimize this bias.
+
+### Data Extrapolation and Accuracy
+
+- **Extrapolation:** To achieve granularity, some values are extrapolated from larger datasets (Zip Code, Metro, or State levels). This method means data tends to be more "accurate" at broader geographical scopes and less so at finer resolutions.
+- **Uniform Demographic Weighting:** The datasets assume uniform demographic trends based on population levels across areas, which can lead to overrepresentation in less dense areas and underrepresentation in denser urban centers.
+
+### Geographic and Reporting Limitations
+
+- **State and Local Restrictions:** Geographic limitations, especially in areas like Massachusetts, result in underrepresented data due to local data sharing restrictions. This can significantly impact the visibility of regions such as Boston in metro-level datasets.
+- **Population Double Counting:** At the census tract level, the population may be overrepresented due to potential double counting, an issue that has not been adjusted in the datasets. A more accurate representation could be achieved by cross-referencing census data with zip code level population estimates.
+
+### Focus on Metro Areas
+
+- **Rural Underrepresentation:** The data primarily focuses on US Major and Minor Metro Statistical areas, leading to an underrepresentation of approximately 40 million rural Americans. Assumptions based on higher-level demographic trends may overestimate values for these rural areas due to the lack of robust reporting.
+
+Understanding these limitations is essential for effectively utilizing the datasets in Miydi Maps - Open Street Data edition. While we strive to provide the most comprehensive and up-to-date information, the nature of data compilation and the limitations of source materials mean that users should exercise caution and consider these factors when interpreting and applying the data in their projects.
 
