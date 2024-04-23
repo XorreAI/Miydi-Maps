@@ -2,7 +2,7 @@
 .qmd
 
 # Exclude the _bin directory
-_bin/
+
 _base_layers/
 OSM data layers/Government/
 OSM data layers/Industrial/
@@ -12,3 +12,15 @@ OSM data layers/Commercial/
 
 _base_layers/Zip Code base with Metro Area.geojson
 _base_layers/Tracts - full native census data.geojson
+
+
+_bin/_exports/
+_bin/_working/
+_bin/CSVs/
+_bin/Data Sources/
+_bin/Health/
+_bin/KuCLI/
+_bin/images/
+
+
+

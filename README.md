@@ -6,8 +6,6 @@ Miydi Maps is an extensive repository dedicated to providing highly detailed soc
   <img src="/Miydi_Map_logo.png" alt="Miydi Maps Logo" width="400"/>
 </p>
 
-Our mission with Miydi Maps is to empower researchers, developers, and analysts by providing them with ready-to-use, granular level data that can significantly enhance the accuracy and relevance of their projects and analyses.
-
 ## 🌍 Data Granularity and Accessibility
 
 Each dataset within Miydi Maps is structured to align with zip codes or census tracts, presenting a unique opportunity to access socio-economic data with unprecedented precision. This level of detail opens new avenues for localized research and development, offering insights that were previously challenging to obtain.
@@ -31,8 +29,6 @@ It's important to note that the original OSM API data contains a large number of
 ## 📅 Data Timeliness
 
 The datasets currently available were pulled in April 2024. Please be aware that this data will not receive updates. However, we are considering the incorporation of additional data sets in future releases to ensure the continued relevance and expansion of the Miydi Maps - Open Street Data edition.
-
-This edition of Miydi Maps is a testament to our commitment to providing extensive, versatile data solutions to meet the diverse needs of our users. Whether you're working on urban planning, navigation applications, or any project requiring detailed geographic data, Miydi Maps - Open Street Data edition offers the foundational data to propel your initiatives forward.
 
 # Using the Miydi Maps Connection Layers
 
@@ -59,11 +55,7 @@ Utilizing the Connection Layer is straightforward and efficient—simply join yo
 The Miydi Maps Connection Layer is an essential tool for researchers, analysts, urban planners, and anyone looking to leverage the power of geospatial data. By providing a straightforward method to connect disparate datasets to geographic locations, this layer opens up new avenues for data-driven decision-making and spatial analysis.
 
 
-### 📈 Calculating Our Values: Identifying Actionable Opportunities
-
-At Miydi Maps, our approach to data analysis is designed to unearth actionable opportunities that can drive informed decision-making and strategic planning. We employ a sophisticated weighted system, inspired by the principles of a bell curve distribution, to analyze and interpret our socio-economic datasets.
-
-#### Bell Curve Analysis and Weighted System
+### Bell Curve Analysis and Weighted System
 
 Our methodology revolves around the segmentation of data into seven distinct tiers, with a deliberate focus on outliers before delving into more common data points. This tiered analysis allows us to assign varying weights to different segments of the data, with the bulk of our attention—and weight—placed on the middle tiers, where the most common values reside.
 
@@ -118,8 +110,112 @@ The SDI was used to calculate many of the data points for the census tract level
 
 When interpreting the scores, they are usually standardized, often on a scale where the mean is zero, and the standard deviation is one. Thus, scores typically indicate how far and in what direction a region deviates from the mean or average level of deprivation. The actual percentages give a clearer picture of the proportion of the population affected by each factor, which can be very informative when assessing the needs of a specific area.
 
+# Get Started using this data with QGIS
 
-## 📊 Data Sources
+This section guides you through the process of using QGIS to visualize the included GeoJSON data layers, including adding a satellite imagery layer for enhanced mapping context. Follow these steps to effectively use the mapping tool.
+
+## Step 1: Download and Install QGIS
+
+QGIS is a free and open-source Geographic Information System (GIS) that allows you to create, edit, and view geographic information. To start:
+
+- Visit the official QGIS website: [QGIS Downloads](https://www.qgis.org/en/site/forusers/download.html)
+- Download the version of QGIS suitable for your operating system (Windows, macOS, or Linux).
+- Follow the installation instructions provided on the site to install QGIS on your computer.
+
+## Step 2: Load GeoJSON Files
+
+Once QGIS is installed, you can begin loading your GeoJSON files, which contain the geographic data you wish to visualize:
+
+- Open QGIS.
+- Click on `Layer` in the top menu, then select `Add Layer` > `Add Vector Layer`.
+- In the `Source` tab, click on the `...` button next to the `Vector Dataset(s)` field to browse your files.
+- Select the GeoJSON file(s) you wish to load and click `Open`.
+- Ensure the `File` option is selected in the `Source Type` section.
+- Click `Add` and then `Close`. The GeoJSON files will automatically load and display on the map.
+
+## Step 3: Enable Bing Satellite Images
+
+If you do not have a satellite layer and wish to add one for better visualization, follow these steps to enable Bing satellite images in QGIS:
+
+- First, ensure the `QuickMapServices` plugin is installed:
+  - Go to `Plugins` in the top menu.
+  - Select `Manage and Install Plugins...`
+  - Search for `QuickMapServices` in the search bar, select it, and click `Install Plugin`.
+  - Close the plugin manager once the installation is complete.
+- To add the Bing satellite images:
+  - Click on `Web` in the top menu, then navigate to `QuickMapServices`.
+  - If you do not see Bing listed, go to `Settings` under `QuickMapServices`, click on the `More Services` tab, then `Get Contributed Pack`. Click `Save` and `OK`.
+  - Now, go back to `QuickMapServices`, find `Bing` and select `Bing Maps Satellite`.
+- The Bing satellite layer will now appear in your project, overlaying any loaded GeoJSON data.
+
+You can easily add Google Maps imagery if you desire, but the Bing data is more consistent overall. 
+
+## Step 4: Load Census Tract Files and Join CSV Data
+
+This step involves loading Census Tract GeoJSON files into QGIS and joining them with the CSV data files.
+
+### Loading Census Tract Files
+
+- Follow the same procedure as in Step 2 to load your Census Tract files:
+  - Go to `Layer` > `Add Layer` > `Add Vector Layer`.
+  - Browse to select your Census Tract GeoJSON file(s) and click `Open`.
+  - Click `Add` and then `Close` to see the Census Tract layers on your map.
+
+### Joining CSV Files
+
+The CSV files contain additional data that can be associated with the Census Tract layers. To perform the join:
+  
+- Ensure each CSV file is prepared with a column named `GeoID`, which corresponds to a similar ID field in the Census Tract GeoJSON data.
+- Open the `Layer Properties` dialog by right-clicking on the Census Tract layer in the `Layers` panel and selecting `Properties`.
+- Navigate to the `Joins` tab.
+- Click the `+` button at the bottom to add a new join.
+- In the `Join layer` dropdown, select the CSV file you want to join.
+- For `Join field` and `Target field`, select `GeoID` or the corresponding fields that should be matched between the GeoJSON and the CSV file.
+- Configure additional join options as necessary, such as choosing which columns to include in the join or handling field name conflicts.
+- Click `OK` to apply the join. The attributes from the CSV file will now be appended to the attributes table of the Census Tract layer.
+
+## Visualizing the Joined Data
+
+This section will explain how the provided default code snippet is used in QGIS to dynamically render feature centroids with scaling based on the map scale and feature size. The map icons used for rendering are stored in the `_styles` directory, and the centroid clusters are set to a maximum display size of 80mm. This ensures that the visual representation is both informative and visually accessible across different zoom levels.
+
+### Explanation of the Code for Feature Centroids
+
+The code provided is used within QGIS's Expression Builder to control the size of the symbols representing the centroids of features based on the map's scale and the area of the features. Here's a breakdown of each part of the code:
+
+```plaintext
+min(
+    max(
+        sqrt($area) / (@map_scale / 2500) * 0.2,  -- Increased scaling factor for larger size
+        12  -- Increased minimum size for better visibility when zoomed in
+    ),
+    60  -- Slightly increased maximum size for larger appearance when zoomed out
+)
+```
+
+- **`sqrt($area)`:** This function calculates the square root of the area of the feature. Taking the square root helps in reducing the range of area values to a more manageable scale, which aids in more uniform symbol sizing.
+
+- **`@map_scale / 2500`:** Here, `@map_scale` refers to the current map scale. Dividing this by 2500 adjusts the scale factor so that the symbol size calculation is balanced against the actual size of the map being viewed.
+
+- **`* 0.2`:** This multiplication factor adjusts the scaling further, tuning the overall size of the centroids to ensure they are neither too large nor too small across various map scales. The value `0.2` can be adjusted based on specific visualization needs.
+
+- **`max(..., 12)`:** The `max` function ensures that the calculated size never falls below 12mm, which helps maintain visibility when the map is zoomed in.
+
+- **`min(..., 60)`:** Conversely, the `min` function caps the maximum size at 60mm to prevent the centroids from becoming too large when the map is zoomed out, ensuring that the map remains uncluttered and visually appealing.
+
+### Implementing the Code in QGIS
+
+To use this expression in QGIS:
+
+1. **Open Layer Properties:** Right-click on the layer for which you want to set the centroid size and select `Properties`.
+
+2. **Navigate to Symbology:** Go to the `Symbology` tab within the Layer Properties dialog.
+
+3. **Set Size Expression:** Find the size setting for your centroid symbol and click on the expression editor button (it looks like an "ƒx" symbol). Paste the provided code into the expression editor.
+
+4. **Save and Apply:** Confirm your settings by clicking `OK` or `Apply`. The map will now render the centroids using the sizes calculated by the expression based on the current zoom level and the area of each feature.
+
+
+# 📊 Data Sources
 
 We pride ourselves on the integrity and reliability of our data. All datasets in Miydi Maps are sourced from either official US Government agencies or reputable companies known for their high-quality data publications. Below is a list of our primary data sources:
 
@@ -128,6 +224,8 @@ We pride ourselves on the integrity and reliability of our data. All datasets in
 - **National Center for Education Statistics**: Supplying educational statistics, including school district demographics and performance metrics.
 - **Environmental Protection Agency**: Contributing environmental data, including pollution statistics and land use data by region.
 - **Reputable Data Companies**: Partnering with leading data providers to include comprehensive datasets on consumer behavior, health statistics, and economic activities at the zip code level.
+
+The raw datasets are included in the Raw Data Sources directory. Most can be downloaded directly from Data.gov. 
 
 It's important to note that our repository contains the most recently released data from each source as of November 2023. However, given the varying publication frequencies (monthly, yearly, etc.) of our data sources, slight discrepancies in the timing of data releases may occur. 
 
