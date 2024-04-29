@@ -152,6 +152,8 @@ If you do not have a satellite layer and wish to add one for better visualizatio
   - Now, go back to `QuickMapServices`, find `Bing` and select `Bing Maps Satellite`.
 - The Bing satellite layer will now appear in your project, overlaying any loaded GeoJSON data.
 
+![Bing Images](/_bin/images/qgis-bin_wOCFIIWW8Y.jpg)
+
 You can easily add Google Maps imagery if you desire, but the Bing data is more consistent overall. 
 
 ## Step 4: Load Census Tract Files and Join CSV Data
