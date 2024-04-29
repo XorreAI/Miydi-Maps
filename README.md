@@ -184,6 +184,8 @@ The CSV files contain additional data that can be associated with the Census Tra
 
 This section will explain how the provided default code snippet is used in QGIS to dynamically render feature centroids with scaling based on the map scale and feature size. The map icons used for rendering are stored in the `_styles` directory, and the centroid clusters are set to a maximum display size of 80mm. This ensures that the visual representation is both informative and visually accessible across different zoom levels.
 
+![Centroid Consolidation](/_bin/images/qgis-bin_W876msFoVb.jpg)
+
 ### Explanation of the Code for Feature Centroids
 
 The code provided is used within QGIS's Expression Builder to control the size of the symbols representing the centroids of features based on the map's scale and the area of the features. Here's a breakdown of each part of the code:
