@@ -53,3 +53,13 @@ min(
     ),
     60  -- Slightly increased maximum size for larger appearance when zoomed out
 )
+
+# Free Mapping Resources Optimized for QGIS
+
+The Miydi Map Icons set is a key resource for anyone seeking optimized mapping tools, freely available under the Creative Commons License. Designed with precision and compatibility in mind, these icons enhance the visual quality of maps created in QGIS and support a wide range of geospatial visualization needs. By leveraging these free resources, users can achieve professional-grade mapping results without the overhead of commercial software or proprietary restrictions.
+
+These icons are specifically tailored to integrate smoothly with QGIS, ensuring that both novice and expert GIS users can take full advantage of their features. The inclusion of these icons as part of your mapping toolkit can significantly improve the readability and aesthetic appeal of your projects, making complex data more accessible and easier to understand.
+
+We encourage you to utilize these icons in your various mapping endeavors and to contribute back to the community by sharing your enhancements or adaptations of the icons. Together, we can continue to expand and refine these resources, making them even more valuable to mappers everywhere.
+
+Thank you for exploring Miydi Map Icons. Happy mapping!
