@@ -24,6 +24,8 @@ Each file within this collection represents a single layer and "type" of OSM dat
 
 The data was meticulously compiled using the OSM API, pulling data for individual US regions to circumvent API limitations. This regional data was then amalgamated into comprehensive GeoJSON files. A thorough cleaning process was undertaken to eliminate duplicates, ensuring the integrity and usability of the datasets.
 
+![Each layer stored separately](/_bin/images/qgis-bin_sMGoSIVL9W.jpg)
+
 ### Handling Extraneous Data Points
 
 It's important to note that the original OSM API data contains a large number of extraneous data points, many of which have NULL values. These have been preserved in the datasets as they may hold value for specific projects, despite their apparent redundancy. Their presence does not significantly affect the overall size of the datasets due to their null value nature.
