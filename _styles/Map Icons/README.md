@@ -1,5 +1,14 @@
 # Miydi Map Icons
 
+The icons from Miydi Map Icons are seamlessly integrated with other visualizations available on this GitHub repository, enhancing the overall mapping experience. By using these customized icons, users can create more engaging and informative maps that are not only practical but visually appealing. 
+
+These icons work particularly well with detailed datasets such as those from OpenStreetMaps, where their distinct designs help to clearly differentiate between various types of points of interest or landmark categories. Below is an example of what it looks like when these icons are applied to the OpenStreetMaps datasets within QGIS:
+
+![Example of Icons on OpenStreetMaps](/_bin/images/qgis-bin_W876msFoVb.jpg)
+
+This visual example illustrates how effectively the Miydi Map Icons can be employed to elevate the aesthetics and functionality of geospatial representations, making complex data easier to interpret and more accessible to a wider audience.
+
+
 ## Optimized Icons for Geospatial Mapping
 
 Welcome to the Miydi Map Icons repository! Our icons, crafted with MidJourney and Adobe AI image generators, are specifically designed to enhance the visual appeal and clarity of mapping applications. Below, you'll find insights into how these icons are optimized for your mapping needs.
