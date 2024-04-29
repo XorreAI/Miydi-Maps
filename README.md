@@ -10,6 +10,8 @@ Miydi Maps is an extensive repository dedicated to providing highly detailed soc
 
 Each dataset within Miydi Maps is structured to align with zip codes or census tracts, presenting a unique opportunity to access socio-economic data with unprecedented precision. This level of detail opens new avenues for localized research and development, offering insights that were previously challenging to obtain.
 
+![Example of Tract Level Visualization](/_bin/images/qgis-bin_28gTTMkiHq.jpg)
+
 # Miydi Maps - Open Street Data 
 
 Welcome to the Open Street Data, a dedicated repository housing GeoJson formatted data derived from Open Street Maps (OSM) specifically for the United States, with plans to extend coverage to other countries shortly. 
