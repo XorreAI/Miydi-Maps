@@ -6,7 +6,7 @@ Welcome to the Miydi Map Icons repository! Our icons, crafted with MidJourney an
 
 ### Precision and Clarity
 
-<img src="Baseball_pin_1.png" alt="Precision and Clarity" width="33%">
+<img src="Soccer_pin_1.png" alt="Precision and Clarity" width="33%">
 
 Our icons are engineered to provide maximum precision and clarity even at small sizes. This ensures that each icon remains distinct and readable under various mapping scenarios, helping users quickly identify important features without confusion.
 
