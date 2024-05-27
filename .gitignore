@@ -1,5 +1,6 @@
 .sh
 .qmd
+.qgz
 
 # Exclude the _bin directory
 
@@ -9,6 +10,7 @@ OSM data layers/Industrial/
 OSM data layers/Athletics/OSM_Sport_Recreation_Centroids/
 OSM data layers/Athletics/OSM_Sport_Recreation_Multipolygons
 # OSM data layers/Commercial/
+
 OSM data layers/Commercial/OSM Alchohol Cannabis Commercial Datasets/*.geojson
 OSM data layers/Commercial/OSM Bank Professional Datasets/*.geojson
 OSM data layers/Commercial/OSM Food Restaurant Datasets/*.geojson
