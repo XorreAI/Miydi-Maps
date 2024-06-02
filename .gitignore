@@ -18,8 +18,8 @@ OSM data layers/Commercial/OSM Hotel Dataset/*.geojson
 OSM data layers/Commercial/OSM Retail Datasets/*.geojson
 OSM data layers/Government/OSM Education Datasets/*.geojson
 OSM data layers/Government/OSM Government Datasets/*.geojson
-OSM data layers/Government/OSM Health Care Datasets/
-OSM data layers/Government/OSM Religious Datasets/
+OSM data layers/Government/OSM Health Care Datasets/*.geojson
+OSM data layers/Government/OSM Religious Datasets/*.geojson
 
 _base_layers/Zip Code base with Metro Area.geojson
 _base_layers/Tracts - full native census data.geojson
