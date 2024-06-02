@@ -5,7 +5,7 @@
 # Exclude the _bin directory
 
 _base_layers/
-OSM data layers/Government/
+
 OSM data layers/Industrial/
 OSM data layers/Athletics/OSM_Sport_Recreation_Centroids/
 OSM data layers/Athletics/OSM_Sport_Recreation_Multipolygons
@@ -16,6 +16,10 @@ OSM data layers/Commercial/OSM Bank Professional Datasets/*.geojson
 OSM data layers/Commercial/OSM Food Restaurant Datasets/*.geojson
 OSM data layers/Commercial/OSM Hotel Dataset/*.geojson
 OSM data layers/Commercial/OSM Retail Datasets/*.geojson
+OSM data layers/Government/OSM Education Datasets/*.geojson
+OSM data layers/Government/OSM Government Datasets/
+OSM data layers/Government/OSM Health Care Datasets/
+OSM data layers/Government/OSM Religious Datasets/
 
 _base_layers/Zip Code base with Metro Area.geojson
 _base_layers/Tracts - full native census data.geojson
