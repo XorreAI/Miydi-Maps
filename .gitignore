@@ -17,7 +17,7 @@ OSM data layers/Commercial/OSM Food Restaurant Datasets/*.geojson
 OSM data layers/Commercial/OSM Hotel Dataset/*.geojson
 OSM data layers/Commercial/OSM Retail Datasets/*.geojson
 OSM data layers/Government/OSM Education Datasets/*.geojson
-OSM data layers/Government/OSM Government Datasets/
+OSM data layers/Government/OSM Government Datasets/*.geojson
 OSM data layers/Government/OSM Health Care Datasets/
 OSM data layers/Government/OSM Religious Datasets/
 
