@@ -1,6 +1,7 @@
 .sh
 .qmd
 .qgz
+.csv#
 
 # Exclude the _bin directory
 
@@ -33,6 +34,8 @@ _bin/Data Sources/
 _bin/Health/
 _bin/KuCLI/
 
+Census Tract Level Datasets/Tracts_Demographics_Layer.geojson
+United States - v6/Full Census Tracts - with Zip level economic data.geojson
 
 
-
+United States - v6/Census Tracts/Full Census Tracts - with Zip level economic data.geojson
