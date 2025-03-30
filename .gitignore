@@ -5,7 +5,7 @@
 
 # Exclude the _bin directory
 
-_base_layers/
+_base_layers/world-geojson-develop/
 
 
 OSM data layers/Athletics/OSM_Sport_Recreation_Centroids/
