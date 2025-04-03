@@ -517,5 +517,132 @@ This tiering approach quickly shows whether a tract is unusually high or low, ne
 
 ---
 
+Below is a **stand-alone, detailed** set of definitions and interpretations for each listed metric. Like the previously described indices (e.g., `HAZ_IDX`, `POV_IDX`, `LBR_IDX`), these items come in **raw**, **adjusted** (`_adj`), **metro ratio** (`_metro_ratio`), and **flag** (`_natl_flag` / `_metro_flag`) versions. The **flag** metrics use a 1–7 tier system indicating how high or low a particular metric is compared to a reference population (nationally or metro-wide). 
 
+Each definition is written so that both non-experts and experts can interpret and contextualize the data.
+
+---
+
+## **LOWMOD, LOWMODUNIV, LOWMODPCT**
+
+1. **`LOWMOD`**  
+   - **Definition:**  
+     - Typically represents the **count of Low- to Moderate-Income (LMI) individuals** residing within an area. “Low- to moderate-income” is often defined by certain federal or local guidelines (e.g., households earning below 80% of the area median income).  
+   - **Interpretation:**  
+     - A larger `LOWMOD` value means a greater absolute number of LMI individuals, which can inform eligibility for certain community development programs or resource allocation.
+
+2. **`LOWMODUNIV`**  
+   - **Definition:**  
+     - Usually denotes the **total universe (or total eligible population)** within which `LOWMOD` is measured. This might be the total population considered for LMI status in that tract or area.  
+   - **Interpretation:**  
+     - Helps you understand the **population base** used to calculate `LOWMOD`.  
+     - If `LOWMOD` is 500 and `LOWMODUNIV` is 1,000, it means half of that eligible population is classified as low- to moderate-income.
+
+3. **`LOWMODPCT`**  
+   - **Definition:**  
+     - The **percentage** of that eligible population (`LOWMODUNIV`) which meets **Low- to Moderate-Income** criteria.  
+   - **Interpretation:**  
+     - A **direct ratio** of how widespread LMI status is within a tract.  
+     - High percentages signal that a significant share of the population falls into lower income brackets, often qualifying for specific housing or community development initiatives.
+
+---
+
+## **TCOST_IDX**
+
+1. **`TCOST_IDX`**  
+   - **Definition:**  
+     - A **Transportation Cost Index** (or similarly named measure) that may capture **typical transportation costs** (fuel, public transit, auto ownership) relative to local conditions. In some cases, it might incorporate commute lengths, vehicle availability, or cost burdens.  
+   - **Interpretation:**  
+     - **Higher** `TCOST_IDX` → Residents may face **greater transportation expenses** (or burdens) relative to income or regional norms.  
+     - **Lower** `TCOST_IDX` → Suggests more affordable or accessible transportation, which could influence location decisions, job access, and overall cost of living.
+
+2. **`TCOST_IDX_adj`**  
+   - **Definition:**  
+     - The **adjusted** version of the Transportation Cost Index, which takes into account **broader regional averages** (e.g., comparing each tract to a county or zip code mean).  
+   - **Interpretation:**  
+     - Reveals whether a tract’s transportation costs are **exceptionally high or low** for its immediate region, helping planners and policymakers understand **local** nuances.
+
+3. **`TCOST_IDX_metro_ratio`**  
+   - **Definition:**  
+     - A **ratio** comparing the tract’s `TCOST_IDX` to the **metro-wide average** of transportation costs.  
+   - **Interpretation:**  
+     - **> 1.0** → The tract’s transportation costs exceed the metro average.  
+     - **< 1.0** → The tract has lower transportation costs than the metro average.  
+
+4. **`TCOST_IDX_natl_flag`**  
+   - **Definition:**  
+     - A **1–7 tier** that places the tract’s transportation cost index in a **national** context.  
+   - **Interpretation:**  
+     - **Tier 1** = Among the bottom 10% for transportation costs (much more affordable/less burden).  
+     - **Tier 7** = Among the top 10% (most expensive/onerous).  
+     - Tiers 2–6 break the distribution into smaller brackets, with Tier 4 near the middle 20%.
+
+5. **`TCOST_IDX_metro_flag`**  
+   - **Definition:**  
+     - A **1–7 tier** ranking the tract’s transportation cost index among **tracts in the same metro area**.  
+   - **Interpretation:**  
+     - **Tier 1** = Among the least expensive or burdensome for transportation costs in the metro.  
+     - **Tier 7** = Among the most expensive or burdensome within the metro.
+
+---
+
+## **Recap of Previously Described Indices**  
+*(For completeness, these were discussed in prior documentation but are summarized here so all definitions can stand alone.)*
+
+1. **`HAZ_IDX` and Variants**  
+   - **Focus**: Environmental or situational hazards (e.g., pollution, flood risk).  
+   - **Interpretation**: Higher index = more hazardous conditions.  
+
+2. **`POV_IDX` and Variants**  
+   - **Focus**: Poverty levels and related financial hardships.  
+   - **Interpretation**: Higher index = greater poverty or economic stress.  
+
+3. **`LBR_IDX` and Variants**  
+   - **Focus**: Labor market conditions (e.g., unemployment, workforce stability).  
+   - **Interpretation**: Higher index = less favorable labor conditions (e.g., high unemployment).
+
+Each of these also appears with **`_adj`** (adjusted), **`_metro_ratio`** (comparison to metro average), **`_natl_flag`** (1–7 tier vs. national distribution), and **`_metro_flag`** (1–7 tier vs. metro distribution).
+
+---
+
+## **About the 1–7 Tier Flags**
+
+For any metric with a `_natl_flag` or `_metro_flag` suffix, the 1–7 scale is broken down like this:
+
+- **Tier 1 (Bottom 10%)** – Significantly lower index values (for “risk” metrics) or significantly more favorable conditions (for “benefit” metrics).  
+- **Tier 2 (Next 15%)** – Better than average but not outliers.  
+- **Tier 3 (Next 15%)** – Near average but still on the more favorable side.  
+- **Tier 4 (Middle 20%)** – The core or median range of the distribution.  
+- **Tier 5 (Next 15%)** – Slightly worse than average but not in the extreme.  
+- **Tier 6 (Next 15%)** – Worse than average, heading toward outlier territory.  
+- **Tier 7 (Top 10%)** – Highest “risk” or least favorable conditions (or, in rare “benefit” metrics, the extreme positive).
+
+---
+
+## **Adjusted Values vs. Metro Ratios**
+
+- **Adjusted Values** (`_adj`):  
+  - Compare the tract to a **larger local or regional average** (e.g., a zip code, county, or another grouping).  
+  - Help identify whether the tract is an outlier in its immediate, broader surroundings.  
+
+- **Metro Ratios** (`_metro_ratio`):  
+  - Compare the tract specifically to the **metro average**, expressed as a **multiplier** (above 1.0 = higher than average, below 1.0 = lower than average).  
+  - Provide a straightforward “greater than / less than” perspective on where the tract stands relative to its metro peers.
+
+---
+
+### **How to Use This Information**
+
+1. **Community Analysis**:  
+   - Look at `LOWMODPCT` to see if a large portion of residents are low- to moderate-income, signifying potential eligibility for federal grants or targeted assistance.  
+   - Inspect `TCOST_IDX` flags to understand if transportation costs might be a barrier to employment or healthcare access.
+
+2. **Policy and Resource Allocation**:  
+   - High `HAZ_IDX` or `HAZ_IDX_adj` might prompt environmental health interventions.  
+   - Significant `POV_IDX` outliers (Tier 7 flags) often need targeted poverty-reduction strategies.
+
+3. **Comparisons and Prioritization**:  
+   - Use **tier flags** (`_natl_flag`, `_metro_flag`) to quickly pinpoint whether a tract is an **extreme outlier**, near-average, or somewhere in between, guiding where to focus limited resources.
+
+All of these definitions can stand independently, allowing **anyone—regardless of their background in demographic analysis—to interpret** the data with clarity and context.
 
